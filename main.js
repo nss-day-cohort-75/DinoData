@@ -1,19 +1,25 @@
+import { getDinosaurs } from "./database.js"
+
+const dinoArray = getDinosaurs()
+
 const dinoHTML = (dinoData) => {
   let html = dinoData.map((dinoObj) => {
     return `
       <div class=dino-card">
         <h3>${dinoObj.name}</h3>
-        <span>${dinoObj.height}</span>
-        <span>${dinoObj.weight}</span>
-        <span>${dinoObj.diet}</span>
-        <span>${dinoObj.favoriteThing}</span>
+        <ul>
+          <li>Height: ${dinoObj.height}</li>
+          <li>Weight: ${dinoObj.weight}</li>
+          <li>Diet: ${dinoObj.diet}</li>
+          <li>Favorite thing: ${dinoObj.favoriteThing}</li>
+        </ul>
       </div>
     `
   })
 
-  return html
+  return html.join("")
 }
 
 const statContainer = document.querySelector("#dino-stats")
 
-statContainer.innerHTML = dinoHTML()
+statContainer.innerHTML = dinoHTML(dinoArray)
