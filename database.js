@@ -26,7 +26,7 @@ const database = {
       height: "5 feet",
       weight: "4 tons",
       diet: "Herbivore",
-      aFewOfMyFavoriteThings: "Swinging its clubbed tail",
+      favoriteThing: "Swinging its clubbed tail",
     },
     {
       name: "Spinosaurus",
