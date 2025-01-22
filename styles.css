@@ -1,10 +1,27 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 5rem;
+  background-color: bisque;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#dino-stats {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 3rem;
 }
 
 .dino-card {
-  border: 2px solid #6b4423;
-  margin: 10px;
-  padding: 15px;
+  border: 2px dashed #20d632;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: goldenrod;
+  color: fuchsia;
 }
