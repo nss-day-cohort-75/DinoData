@@ -20,6 +20,6 @@ const dinoHTML = (dinoData) => {
   return html.join("")
 }
 
-const statContainer = document.querySelector("#dino-stats")
+const statContainer = document.querySelector("#dino-stats-container")
 
 statContainer.innerHTML = dinoHTML(dinoArray)
