@@ -10,16 +10,17 @@ body {
   flex-direction: row;
 }
 
-.dino-stats {
+#dino-stats {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 3rem;
 }
 
 .dino-card {
   border: 2px dashed #20d632;
-  margin: 3rem;
+  margin: 2rem;
   padding: 2rem;
   background-color: goldenrod;
   color: fuchsia;
