@@ -5,7 +5,7 @@ const dinoArray = getDinosaurs()
 const dinoHTML = (dinoData) => {
   let html = dinoData.map((dinoObj) => {
     return `
-      <div class="dino-data-card">
+      <div class="dino-card-wrapper">
         <h3>${dinoObj.name}</h3>
         <ul>
           <li>Height: ${dinoObj.height}</li>

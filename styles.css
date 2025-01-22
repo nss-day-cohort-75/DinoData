@@ -18,7 +18,7 @@ body {
   gap: 3rem;
 }
 
-.dino-data-card {
+.dino-card-wrapper {
   border: 2px dashed #20d632;
   margin: 2rem;
   padding: 2rem;
